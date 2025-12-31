@@ -292,11 +292,11 @@ a {
   letter-spacing: 1px;
   opacity: 0.8;
 }
-    .middle h1 {
-       color: black;
-        width: 280px;
-    }
-
+   .middle h1 img {
+    color: black;
+    width: 149px;
+    object-fit: contain;
+}
     .row {
         max-width: 1000px;
     }
@@ -374,7 +374,20 @@ text-transform: uppercase;
 .center{
     text-align: center;
 }
-
+@media screen and (max-width:1024px) {
+    .middle h1 img{
+    text-align: center;
+    margin: 0 auto;
+            object-fit: contain;
+}
+.time-box {
+    padding: 20px 14px;
+    min-width: 80px;
+}
+.countdown {
+    justify-content: center;
+}
+}
 /* Mobile */
 @media (max-width: 600px) {
     .time-box {
@@ -389,9 +402,10 @@ text-transform: uppercase;
     gap: 5px;
     justify-content: center;
   }
-  .middle h1 {
-    width: 180px;
-            text-align: center;
+  .middle h1 img{
+         width: 120px;
+        text-align: center;
         margin: 0 auto;
+
 }
 }
